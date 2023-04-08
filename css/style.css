@@ -447,12 +447,12 @@ a:hover {
   width: 35px;
 }
 
-.navbar-b.navbar-trans .show > .nav-link:before,
-.navbar-b.navbar-trans .active > .nav-link:before,
+.navbar-b.navbar-trans .show>.nav-link:before,
+.navbar-b.navbar-trans .active>.nav-link:before,
 .navbar-b.navbar-trans .nav-link.show:before,
 .navbar-b.navbar-trans .nav-link.active:before,
-.navbar-b.navbar-reduce .show > .nav-link:before,
-.navbar-b.navbar-reduce .active > .nav-link:before,
+.navbar-b.navbar-reduce .show>.nav-link:before,
+.navbar-b.navbar-reduce .active>.nav-link:before,
 .navbar-b.navbar-reduce .nav-link.show:before,
 .navbar-b.navbar-reduce .nav-link.active:before {
   width: 35px;
@@ -466,8 +466,8 @@ a:hover {
   color: #fff;
 }
 
-.navbar-b.navbar-trans .show > .nav-link,
-.navbar-b.navbar-trans .active > .nav-link,
+.navbar-b.navbar-trans .show>.nav-link,
+.navbar-b.navbar-trans .active>.nav-link,
 .navbar-b.navbar-trans .nav-link.show,
 .navbar-b.navbar-trans .nav-link.active {
   color: #fff;
@@ -492,8 +492,8 @@ a:hover {
   color: #0078ff;
 }
 
-.navbar-b.navbar-reduce .show > .nav-link,
-.navbar-b.navbar-reduce .active > .nav-link,
+.navbar-b.navbar-reduce .show>.nav-link,
+.navbar-b.navbar-reduce .active>.nav-link,
 .navbar-b.navbar-reduce .nav-link.show,
 .navbar-b.navbar-reduce .nav-link.active {
   color: #0078ff;
@@ -914,7 +914,7 @@ a:hover {
 .card-blog .post-date {
   color: #4e4e4e;
   display: inline-block;
-  float: right;
+  /* float: right; */
 }
 
 /*======================================
@@ -1058,7 +1058,7 @@ a:hover {
 ======================================*/
 
 .footer-paralax {
-  padding: 4rem 0 0 0;
+  padding: 0 0 0 0;
 }
 
 .contact-mf {
@@ -1175,6 +1175,84 @@ footer .credits a {
   font-size: 1.25rem;
   line-height: 1.5;
   border-radius: .3rem;
+}
+.options {
+  list-style-type: none;
+  position: absolute;
+  right: 1px;
+  bottom: 70px;
+}
+.iconbutton .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  right: 105%;
+}
+
+.iconbutton:hover .tooltiptext {
+  visibility: visible;
+}
+
+.iconbutton {
+
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  /* background: #FF4F79; */
+  margin-bottom: 5px;
+  background: linear-gradient(to top right, #820278 10%, #00ccff 50%, #eb6227 40%);
+
+  /* box-shadow: 10px 10px 5px #aaaaaa; */
+
+}
+
+.fa-github:before {
+  content: "\f09b";
+  font-size: 40px;
+}
+
+.button {
+
+  width: 60px;
+
+  height: 60px;
+
+  background: #A11692;
+
+}
+
+.fab-container {
+
+  position: fixed;
+
+  bottom: 50px;
+
+  right: 50px;
+
+  cursor: pointer;
+
+}
+
+.iconbutton i {
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  height: 100%;
+
+  color: white;
+
 }
 
 @media (min-width: 577px) {
